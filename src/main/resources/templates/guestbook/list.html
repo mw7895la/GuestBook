@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<!--/layout/basic을 include하는데 content로 된 부분은 여기있는 fragment의 content로 하겠다-->
+<th:block th:replace="~{/layout/basic:: setContent(~{this::content})}">
+    <th:block th:fragment="content">
+        <h1>Guest Book List Page</h1>
+    </th:block>
+
+</th:block>
