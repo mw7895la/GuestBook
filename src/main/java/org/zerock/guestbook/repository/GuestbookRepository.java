@@ -6,4 +6,5 @@ import org.zerock.guestbook.entity.Guestbook;
 
                                                                             //Querydsl을 사용하기 때문에 추가로 상속
 public interface GuestbookRepository extends JpaRepository<Guestbook,Long>, QuerydslPredicateExecutor<Guestbook> {
+
 }
